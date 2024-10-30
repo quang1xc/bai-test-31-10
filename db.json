@@ -1,0 +1,149 @@
+{
+    "users": [
+      {"username":  "admin123", "password": "admin123", "token": "admin123"},
+      {"username":  "admin456", "password": "admin123", "token":  "admin456"}
+    ],
+    "subMerchants": [
+      {
+        "id": 1,
+        "code":  "HAPPYBAKERY",
+        "name": "Happy Bakery",
+        "address": "65 Trần Bình",
+        "tables": [
+          {"no":  1, "status": "EMPTY"},
+          {"no":  2, "status": "NEW"},
+          {"no":  3, "status": "NEW"},
+          {"no":  4, "status": "NEW"},
+          {"no":  5, "status": "ORDER"},
+          {"no":  6, "status": "NEW"},
+          {"no":  7, "status": "ORDER"},
+          {"no":  8, "status": "USING"},
+          {"no":  9, "status": "EMPTY"},
+          {"no":  10, "status": "USING"},
+          {"no":  11, "status": "FINISH"},
+          {"no":  12, "status": "EMPTY"}
+        ]
+      },
+      {
+        "id": 1,
+        "code":  "BANHSINHNHATHAPPYBAKERY",
+        "name": "Bánh Sinh Nhật Happy Bakery",
+        "address": "65 Trần Bình",
+        "tables": [
+          {"no":  1, "status": "EMPTY"},
+          {"no":  2, "status": "NEW"},
+          {"no":  3, "status": "NEW"},
+          {"no":  4, "status": "NEW"},
+          {"no":  5, "status": "ORDER"},
+          {"no":  6, "status": "NEW"},
+          {"no":  7, "status": "ORDER"},
+          {"no":  8, "status": "USING"},
+          {"no":  9, "status": "EMPTY"},
+          {"no":  10, "status": "USING"},
+          {"no":  11, "status": "FINISH"},
+          {"no":  12, "status": "EMPTY"}
+        ]
+      },
+      {
+        "id": 1,
+        "code":  "QUANNAMHONGHANOI",
+        "name": "Quán Nam Hồng",
+        "address": "28 Đền Lừ",
+        "tables": [
+          {"no":  1, "status": "EMPTY"},
+          {"no":  2, "status": "NEW"},
+          {"no":  3, "status": "NEW"},
+          {"no":  4, "status": "NEW"},
+          {"no":  5, "status": "ORDER"},
+          {"no":  6, "status": "NEW"},
+          {"no":  7, "status": "ORDER"},
+          {"no":  8, "status": "USING"},
+          {"no":  9, "status": "EMPTY"},
+          {"no":  10, "status": "USING"},
+          {"no":  11, "status": "FINISH"},
+          {"no":  12, "status": "EMPTY"}
+        ]
+      },
+      {
+        "id": 1,
+        "code":  "19BILLIARD",
+        "name": "19 Billiard",
+        "address": "19 Nguyễn Trãi",
+        "tables": [
+          {"no":  1, "status": "EMPTY"},
+          {"no":  2, "status": "NEW"},
+          {"no":  3, "status": "NEW"},
+          {"no":  4, "status": "NEW"},
+          {"no":  5, "status": "ORDER"},
+          {"no":  6, "status": "NEW"},
+          {"no":  7, "status": "ORDER"},
+          {"no":  8, "status": "USING"},
+          {"no":  9, "status": "EMPTY"},
+          {"no":  10, "status": "USING"},
+          {"no":  11, "status": "FINISH"},
+          {"no":  12, "status": "EMPTY"}
+        ]
+      },
+      {
+        "id": 1,
+        "code":  "LANDUNGBILLIARDBANMRSUNG",
+        "name": "Lân Dũng Billiard - Bàn Mr Sung",
+        "address": "Tầng 7 - 35 Nguyễn Xiển",
+        "tables": [
+          {"no":  1, "status": "EMPTY"},
+          {"no":  2, "status": "NEW"},
+          {"no":  3, "status": "NEW"},
+          {"no":  4, "status": "NEW"},
+          {"no":  5, "status": "ORDER"},
+          {"no":  6, "status": "NEW"},
+          {"no":  7, "status": "ORDER"},
+          {"no":  8, "status": "USING"},
+          {"no":  9, "status": "EMPTY"},
+          {"no":  10, "status": "USING"},
+          {"no":  11, "status": "FINISH"},
+          {"no":  12, "status": "EMPTY"}
+        ]
+      },
+      {
+        "id": 1,
+        "code":  "HUONGQUYNHBUNCHAOCAQUA",
+        "name": "Hương Quỳnh - Bún Cháo - Cá Quả",
+        "address": "122g6b Tập Thể Thành Công",
+        "tables": [
+          {"no":  1, "status": "EMPTY"},
+          {"no":  2, "status": "NEW"},
+          {"no":  3, "status": "NEW"},
+          {"no":  4, "status": "NEW"},
+          {"no":  5, "status": "ORDER"},
+          {"no":  6, "status": "NEW"},
+          {"no":  7, "status": "ORDER"},
+          {"no":  8, "status": "USING"},
+          {"no":  9, "status": "EMPTY"},
+          {"no":  10, "status": "USING"},
+          {"no":  11, "status": "FINISH"},
+          {"no":  12, "status": "EMPTY"}
+        ]
+      },
+      {
+        "id": 1,
+        "code":  "NEMNUONGQUYLUYEN",
+        "name": "Nem Nướng Quý Luyện",
+        "address": "Đối Diện 83b Đường 25m Tân Triều Mới",
+        "tables": [
+          {"no":  1, "status": "EMPTY"},
+          {"no":  2, "status": "NEW"},
+          {"no":  3, "status": "NEW"},
+          {"no":  4, "status": "NEW"},
+          {"no":  5, "status": "ORDER"},
+          {"no":  6, "status": "NEW"},
+          {"no":  7, "status": "ORDER"},
+          {"no":  8, "status": "USING"},
+          {"no":  9, "status": "EMPTY"},
+          {"no":  10, "status": "USING"},
+          {"no":  11, "status": "FINISH"},
+          {"no":  12, "status": "EMPTY"}
+        ]
+      }
+    ]
+  }
+  
