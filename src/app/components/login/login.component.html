@@ -1,14 +1,26 @@
 
-  <div class="login-container">
-    <form (ngSubmit)="login()" class="form-signin">       
-      <h2 class="form-signin-heading">Đăng nhập</h2>
-      <input type="text" class="form-control" name="username" placeholder="Username" [(ngModel)]="username" name="username" required autofocus="" />
-      <input type="password" class="form-control" name="password" [(ngModel)]="password" placeholder="Password" required/>      
-     
-      <button class="button-login" type="submit">Đăng nhập</button>   
-      <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
-    </form>
-  </div>
+<div class="login-container">
+  <form (ngSubmit)="login()" #loginForm="ngForm" class="form-signin">       
+    <h2 class="form-signin-heading">Đăng nhập</h2>
+    
+    <input type="text" class="form-control" name="username" placeholder="Username" [(ngModel)]="username" required minlength="3" #usernameInput="ngModel" />
+    <div *ngIf="usernameInput.invalid && (usernameInput.dirty || usernameInput.touched)" class="error">
+      <div *ngIf="usernameInput.errors?.['required']">Vui lòng nhập tên đăng nhập.</div>
+      <div *ngIf="usernameInput.errors?.['minlength']">Tên đăng nhập phải có ít nhất 3 ký tự.</div>
+    </div>
+    
+    <input type="password" class="form-control" name="password" placeholder="Password" [(ngModel)]="password" required minlength="3" #passwordInput="ngModel"/>
+    <div *ngIf="passwordInput.invalid && (passwordInput.dirty || passwordInput.touched)" class="error">
+      <div *ngIf="passwordInput.errors?.['required']">Vui lòng nhập mật khẩu.</div>
+      <div *ngIf="passwordInput.errors?.['minlength']">Mật khẩu phải có ít nhất 3 ký tự.</div>
+    </div>
+    
+    <button class="button-login" type="submit" [disabled]="loginForm.invalid">Đăng nhập</button>   
+    <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+  </form>
+</div>
+
+
 
   <!-- <div class="modal" appModal="{{ errorMessage }}">
     <div class="modal-content">

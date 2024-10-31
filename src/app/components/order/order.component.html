@@ -2,13 +2,15 @@
     <h2>Cơ sở: {{ merchant.name }}</h2>
     <div class="table-list">
       <div *ngFor="let order of merchant.tables" 
+      
            [ngClass]="{
              'empty': order.status === 'EMPTY',
              'new': order.status === 'NEW',
              'using': order.status === 'USING',
              'finish': order.status === 'FINISH',
             
-           }">
+           }"
+           (click)="selectTable(order.no)">
         Bàn {{ order.no }}
       </div>
     </div>

@@ -12,8 +12,10 @@ export class ServerService {
   private readonly httpClient = inject(HttpClient);
 
   login(username: string, password: string): Observable<IResponseData<{token: string} | null>> {
+    console.log("da goi api")
     return this.httpClient.get<IAccount[]>('http://localhost:3000/accounts')
       .pipe(map(res => {
+        
         const accounts = res;
         const account = accounts.find(it => it.username === username);
 
