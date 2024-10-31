@@ -1,0 +1,36 @@
+.table-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .table-list div {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .empty {
+    background-color: white;
+  }
+  
+  .new {
+    background-color: lightgreen;
+  }
+  
+  .using {
+    background-color: lightblue;
+  }
+  
+  .finish {
+    background-color: lightcoral;
+  }
+  .changed {
+    background-color: yellow;
+    transition: background-color 0.5s;
+  }

@@ -1,0 +1,23 @@
+<div class="merchant-list">
+    <h2>Danh Sách Cơ Sở</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Mã Cơ Sở</th>
+                <th>Tên Cơ Sở</th>
+                <th>Địa Chỉ</th>
+                <th>Thao Tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let merchant of merchants; let i = index">
+                <td>{{ i + 1 }}</td>
+                <td>{{ merchant.code }}</td>
+                <td>{{ merchant.name }}</td>
+                <td>{{ merchant.address }}</td>
+                <td><button (click)="viewDetails(merchant.code)">Xem chi tiết</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -61,10 +61,11 @@ export class ServerService {
       }));
   }
 
-  getMerchant(merchantId: number) {
+  getMerchant(codeMerchant: string) {
     return this.httpClient.get<IMerchant[]>('http://localhost:3000/merchants')
       .pipe(map(res => {
-        const merchant = res.find(it => it.id === merchantId);
+        // trong db id của các cửa hàng đang để giống nhau 
+        const merchant = res.find(it => it.code === codeMerchant);
         if (!merchant) {
           return {
             code: 400,
