@@ -1,9 +1,9 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { RouterOutlet,Router } from '@angular/router';
+import { RouterOutlet,Router,NavigationEnd  } from '@angular/router';
 import {ServerService} from './server/server.service';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-
+import { filter } from 'rxjs/operators';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -16,6 +16,11 @@ export class AppComponent {
   title = 'test';
   isLoggedIn: boolean = false; 
   constructor(private router: Router) {
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      this.checkLoginStatus();
+    });
     // this.serverService.login('admin123', 'admin123')
     //   .subscribe(res => {
     //     console.log('res: ', res)
